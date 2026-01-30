@@ -1,0 +1,150 @@
+header {
+    font-family: helvetica, sans-serif ;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    padding: 30px;
+    margin: auto;
+    border-bottom: 2px solid whitesmoke;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: small;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+
+a {
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+h1 {
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: bold;
+}
+
+h2{
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: 600;
+}
+
+h3{
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: medium;
+    
+}
+
+h4{
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: medium;
+}
+
+h5{
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    max-width: 300px;
+    font-size: 18px;
+
+}
+
+table {
+    width: max-content;
+    border-radius: 0%;
+    border: 2px solid whitesmoke;
+}
+
+th {
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+}
+
+td {
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: normal;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+}
+
+tr:nth-child(even) {background-color: #272727;}
+
+footer {
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#worklink {
+    color: #3366CC;
+    font-family: helvetica, sans-serif ;
+    font-weight: normal;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.margin{
+    margin-left: 60px;
+}
+
+p{
+    color: whitesmoke;
+    font-family: helvetica, sans-serif ;
+    font-weight: normal;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+img {
+    border-radius: 15%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+li {color: whitesmoke;
+}
+
+.column{
+    flex: 50%;
+    padding:10px;
+}
+.row{
+    display:flex;
+    margin-left: 50px;
+}
+
+.navbreak{
+    margin-right: 10px;
+    margin-left: 10px;
+}
