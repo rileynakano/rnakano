@@ -135,15 +135,6 @@ img {
 li {color: whitesmoke;
 }
 
-.column{
-    flex: 50%;
-    padding:10px;
-}
-.row{
-    display:flex;
-    margin-left: 50px;
-}
-
 .navbreak{
     margin-right: 10px;
     margin-left: 10px;
