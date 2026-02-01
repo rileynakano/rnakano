@@ -4,7 +4,7 @@ header {
     font-size: larger;
     background-color: #1a1a1a;
     color: whitesmoke;
-    padding: 30px;
+    padding: 2rem;
     margin: auto;
     border-bottom: 2px solid whitesmoke;
 }
@@ -12,7 +12,7 @@ header {
 nav {
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.2rem;
     font-size: small;
     font-weight: bold;
     color: whitesmoke;
@@ -58,7 +58,7 @@ h5{
     color: whitesmoke;
     font-family: helvetica, sans-serif ;
     max-width: 300px;
-    font-size: 18px;
+    font-size: 1.2rem;
 
 }
 
@@ -114,8 +114,8 @@ p{
     color: whitesmoke;
     font-family: helvetica, sans-serif ;
     font-weight: normal;
-    font-size: 16px;
-    max-width: 400px;
+    font-size: 1rem;
+    max-width: 40rem;
 }
 
 img {
@@ -138,4 +138,26 @@ li {color: whitesmoke;
 .navbreak{
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;             
+  align-items: flex-start;
+}
+
+.item {
+  text-align: left;      
+}
+
+.image-item img {
+  max-width: 150px;
+  height: auto;
+  display: block;         
+  margin-bottom: 8px;      
+}
+
+.image-item h3 {
+  font-size: 16px;
+  margin: 0;              
 }

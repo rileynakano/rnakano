@@ -1,14 +1,21 @@
-let svg = document.querySelector("svg");
-console.log(svg);
+let links = document.querySelectorAll(".worklink");
+
+let hover = document.querySelectorAll(".hover");
+console.log(hover)
+
+links.forEach((link) => {
+    link.addEventListener("click", () => {
+        alert("Copied!");
+    });
+});
 
 
-const svgNS = "http://www.w3.org/2000/svg";
-const rect = document.createElementNS(svgNS, "rect");
+hover.forEach((hov) => {
+  hov.addEventListener("mouseenter", () => {
+    hov.style.color = "orange";
+  });
 
-rect.setAttribute("x", 400)
-rect.setAttribute("y", 400)
-rect.setAttribute("width", "100");
-rect.setAttribute("height", "100");
-rect.setAttribute("fill", "red");
-svg.appendChild(rect);
-
+  hov.addEventListener("mouseleave", () => {
+    hov.style.color = "whitesmoke";
+  });
+});
