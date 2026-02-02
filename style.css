@@ -144,9 +144,17 @@ li {color: whitesmoke;
   display: flex;
   gap: 1.5rem;             
   align-items: flex-start;
-  max-width: 100%
+  flex-direction: row;
 }
 
 .item {
-  text-align: left;      
+  text-align: left;
+  padding: 0.5rem; 
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
