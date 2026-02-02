@@ -57,7 +57,7 @@ h4{
 h5{
     color: whitesmoke;
     font-family: helvetica, sans-serif ;
-    max-width: 300px;
+    max-width: 20rem;
     font-size: 1.2rem;
 
 }
@@ -73,7 +73,7 @@ th {
     font-family: helvetica, sans-serif ;
     font-weight: bold;
     text-align: left;
-    padding: 15px;
+    padding: 1rem;
     border-bottom: 2px solid whitesmoke;
     border-left: 2px solid whitesmoke;
 }
@@ -83,7 +83,7 @@ td {
     font-family: helvetica, sans-serif ;
     font-weight: normal;
     text-align: left;
-    padding: 15px;
+    padding: 1rem;
     border-bottom: 2px solid whitesmoke;
     border-left: 2px solid whitesmoke;
 }
@@ -95,7 +95,7 @@ footer {
     font-family: helvetica, sans-serif ;
     font-weight: normal;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 0.7rem;
 }
 
 #worklink {
@@ -107,7 +107,7 @@ footer {
 }
 
 .margin{
-    margin-left: 60px;
+    margin-left: 4rem;
 }
 
 p{
@@ -136,28 +136,16 @@ li {color: whitesmoke;
 }
 
 .navbreak{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
 }
 
 .row {
   display: flex;
-  gap: 20px;             
+  gap: 1.5rem;             
   align-items: flex-start;
 }
 
 .item {
   text-align: left;      
-}
-
-.image-item img {
-  max-width: 150px;
-  height: auto;
-  display: block;         
-  margin-bottom: 8px;      
-}
-
-.image-item h3 {
-  font-size: 16px;
-  margin: 0;              
 }
