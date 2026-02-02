@@ -144,6 +144,7 @@ li {color: whitesmoke;
   display: flex;
   gap: 1.5rem;             
   align-items: flex-start;
+  max-width: 100%
 }
 
 .item {
