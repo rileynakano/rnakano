@@ -73,7 +73,7 @@ th {
     font-family: helvetica, sans-serif ;
     font-weight: bold;
     text-align: left;
-    padding: 15px;
+    padding: 1rem;
     border-bottom: 2px solid whitesmoke;
     border-left: 2px solid whitesmoke;
 }
@@ -83,7 +83,7 @@ td {
     font-family: helvetica, sans-serif ;
     font-weight: normal;
     text-align: left;
-    padding: 15px;
+    padding: 1rem;
     border-bottom: 2px solid whitesmoke;
     border-left: 2px solid whitesmoke;
 }
@@ -95,7 +95,7 @@ footer {
     font-family: helvetica, sans-serif ;
     font-weight: normal;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 0.7rem;
 }
 
 #worklink {
@@ -107,7 +107,7 @@ footer {
 }
 
 .margin{
-    margin-left: 60px;
+    margin-left: 4rem;
 }
 
 p{
@@ -136,13 +136,13 @@ li {color: whitesmoke;
 }
 
 .navbreak{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .row {
   display: flex;
-  gap: 20px;             
+  gap: 1.5rempx;             
   align-items: flex-start;
 }
 
