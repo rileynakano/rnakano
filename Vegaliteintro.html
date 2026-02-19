@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const options = {
+        config: {
+          // Vega-Lite default configuration
+        },
+        init: (view) => {
+          // initialize tooltip handler
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+        view: {
+          // view constructor options
+          // remove the loader if you don't want to default to vega-datasets!
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+
+      // register vega and vega-lite with the API
+      vl.register(vega, vegaLite, options);
+    </script>
+    <style></style>
+    <title>Vega-Lite Intro</title>
+  </head>
+<body>
+     <header><a class="hover" href="./index.html"> Riley Nakano's Website</a>
+        <br>
+    <nav>
+        <a class="navbreak" class="hover" href="./Visualizations.html">Assignment 2</a>
+        <a class="navbreak" class="hover" href="./Vegaliteintro.html">Vegalite Intro</a>
+
+    </nav>
+    </header>
+    <div class="margin">
+        <h1>Vegalite Introduction</h1>
+    <div>
+        <div>
+    <h2>Visualization 1: Global Sales by Genre and Platform</h2>
+        <p class="boldbody">What trends do you notice? What’s interesting 
+    in the data? Are there certain platforms or genres that dominate the sales? </p>
+    <p><span class="boldbody">Reflection:</span> <br> The main thing I noticed is that due to when the data 
+    set was made, the newer consoles (3DS, Xbox One, and PS4) generally have
+    fewer sales than their predecessors. I also noticed that Wii Sports has
+    a lot of sales, dwarfing other sports games, especially since no other 
+    sports game on other consoles came close. </p>
+
+        <p><span class="boldbody">Design Decisions:</span> <br> I chose to go with a marked 
+    circle, with the circle size representing how many sales a game had. 
+    This visualization works because each combination of genre and platform 
+    is easily visible in the graphic while providing a general idea of how much
+    a genre-platform pair does with audiences. The X axis being the platform
+    is better because all the names are shortened, so they are easier to read
+    than the genre names that are made up of full words.</p>
+
+    <div id="view1"></div>
+    </div>
+    <div>
+    <h3>Question 1.1: What genre has the highest sales from nintendo platforms?</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br> I chose to go with
+    a mark circle graph again, with circle size representing how many
+    sales a game had. This visualization works because each combination
+    of genre and platform is easily visible in the graphic while 
+    providing a general idea of how much a genre-platform pair does
+    with audiences. With fewer consoles, fewer circles make it 
+    easier to read than the original visualization.</p>
+
+    <div id="view1a"></div>
+    </div>
+    <div>
+    <h3>Question 1.2: Which platform has the most action games in its catalog</h3>
+
+        <p><span class="boldbody">Design Decisions:</span> <br> I could have made
+    a chart with the count of records and the console as the x and y 
+    axes; however, I think this is actually better because the viewer
+    actually has to look around less to see the whole chart, and with
+    the sizes varying so much, comparing between consoles is actually
+    pretty easy.</p>
+
+        <div id="view1b"></div>
+    </div>
+    </div>
+    <br>
+
+<div>
+    <div>
+    <h2>Visualization 2:  Sales Over Time by Platform and Genre</h2>
+        <p class="boldbody">How have video game sales changed for different 
+    platforms, genres, and publishers?</p><p><span class="boldbody">Reflection:</span> 
+    <br> The spread of popularairty has stayed relatively consistent; however, 
+    it can easily be seen when new consoles roll out due to the 
+    quick color shift in the graph. Before 1990, games were heavily dominated
+    by the Atari 2600 and the NES, respectively. When the years go on, we 
+    see more competition when Xbox and PlayStation come in, while Nintendo
+    is still producing home consoles like the Wii & Wii U, while dominating 
+    the handheld console field with the DS and 3DS. With more consoles coming out, 
+    the number of games sold has gone up as well, and we see a very consistent 
+    incline in global sales until the dip in recent years, due to how recent
+    the data is to the game releases. </p>
+
+        <p><span class="boldbody">Design Decisions:</span> <br> The year and sales are the
+    x and y axes, respectively; this gives the viewer an immediate idea of 
+    how each game did and the performance over time. The platform was chosen
+    to be color instead of genre because the platform lifespan will 
+    automatically categorize over time, grouping each platform very easily.
+    Each shape represents a genre. If I made the platform be represented 
+    by a shape, there would be too many shapes to ever make out what is 
+    what. With fewer categories in the genre, using different shapes works 
+    much better.</p>
+
+    <div id="view2"></div>
+    </div>
+
+    <div>
+    <h3>Question 2.1: What were best selling games before the year 2000</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br> For this visualization 
+    I tried to keep it the same as the visualization it originated from 
+    so I could show the changes. Unfortunately, things like sales amount
+    and console color have changed, but those connections wouldn’t remain 
+    in the viewers' minds after they left the original anyway, so it is 
+    okay to change.</p>
+
+    <div id="view2a"></div>
+    </div>
+
+    <div>
+    <h3>Question 2.2: What were the Wii games that sold between 5-10 million sales?</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br> The original y-axis 
+    still had markers below 5 even though there was no data being presented
+    there; I chose to just cut all of the markers so that it was easier 
+    to read the data actually being presented.</p>
+
+    <div id="view2b"></div>
+    </div>
+        </div>
+
+    <div>
+        <div>
+    <h2>Visualization 3: Regional Sales vs. Platform</h2>
+        <p class="boldbody">Do you notice any regional preferences or patterns? 
+    Which platforms are more popular in specific regions?</p> 
+
+        <p><span class="boldbody">Reflection:</span> <br>
+    I mostly noticed how much other areas don’t purchase games since the other 
+    regions' color is consistently at the bottom. Other than that, Europe 
+    seems to heavily prefer PlayStation consoles and PCs, while North 
+    Americans prefer the Xbox series as their console of choice. Old Nintendo 
+    consoles such as the NES and SNES were very Japan-dominated, and once 
+    the Wii came out, Nintendo started gaining a larger audience from other
+    regions, especially North America. </p>
+
+        <p><span class="boldbody">Design Decisions:</span> <br> The region being represented
+    by color was a choice I made because with only 4 things that are being 
+    measured and with a lot of possible overlapping, color allows the viewer
+    to know exactly which region is being represented. The x-axis is the 
+    platform stacked on top of this because it won’t scatter the plot at 
+    all, so the only thing that a viewer might have to think about when 
+    looking at this visualization is how many sales it had, which is okay 
+    because that is what the y-axis of a graph is for.</p>
+    
+    <div id="view3"></div>
+    </div>
+
+    <div>
+    <h3>Question 3.1: What were the best selling PC games in North America?</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br> I chose just to make 
+        this visualization 1 line so viewers can read it easily.</p>
+
+    <div id="view3a"></div>
+    </div>
+
+    <div>
+    <h3>Question 3.2: What were the highest selling games per platform in Europe?</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br>  The y-axis is the 
+    platform stacked on top of this because it won’t scatter the plot at 
+    all, so the only thing that a viewer might have to think about when 
+    looking at this visualization is how many sales it had, which is okay
+    because that is what the x-axis of a graph is for.</p>
+
+    <div id="view3b"></div>
+    </div>
+    </div>
+
+    <div>
+        <div>
+    <h2>Visualization 4: Visual Storytelling</h2>
+        <p><span class="boldbody">Reflection:</span> <br> Looking at Nintendo consoles' 
+    global sales over the years, I wanted to see how a specific company’s
+    sales evolve with its games and consoles. I chose Nintendo for this 
+    visualization (and some others) because Nintendo’s games are almost 
+    solely locked to their own consoles. This allows me to worry less about
+    any outside variables that could change how I see the visualization 
+    while still getting as much accurate information as possible.</p>
+
+        <p><span class="boldbody">Design Decisions:</span> <br> The platform being 
+    colored is a choice I made previously. Since each platform is restricted 
+    to a life span, if mixed with years, it automatically groups years 
+    into larger categories.</p>
+
+    <div id="view4"></div>
+    </div>
+
+    <div>
+    <h3>Question 4.1: What were the highest selling NES games?</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br> The platform being 
+    colored is a choice I made previously. Since each platform is restricted
+    to a life span, if mixed with years, it automatically groups years 
+    into larger categories.</p>
+
+    <div id="view4a"></div>
+    </div>
+
+    <div>
+    <h3>Question 4.2: Which year had the highest average sales?</h3>
+        <p><span class="boldbody">Design Decisions:</span> <br> For this visualization I 
+    wanted to show each region as a separate game was initially unexpected, 
+    but I think it's more interesting to see how a game did regionally, since 
+    the viewer can see how only one region carried a game’s success or how a
+    game released in only one region outperformed one that was released in 
+    multiple.</p>
+
+    <div id="view4b"></div>
+    </div>
+    
+    </div>
+    </div>
+        <script type="module" src="vegavis.js"></script>
+        <Footer class="margin">
+    ©2026 Riley Nakano    
+</Footer>
+</body>
+</html>
