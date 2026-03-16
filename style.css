@@ -195,4 +195,10 @@ li {color: whitesmoke;
   height: 100%;
   max-width: 50rem;
   padding-bottom: 4rem;
+
+#container svg {
+    display: block;
+    width: 800px;
+    height: 600px;
+  }
 }
